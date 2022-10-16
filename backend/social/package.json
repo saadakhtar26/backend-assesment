@@ -9,7 +9,7 @@
 		"makemigrate": "knex --knexfile ./database/knexfile.js migrate:make",
 		"makeseed": "knex --knexfile ./database/knexfile.js seed:make",
 		"seed": "knex seed:run --knexfile ./database/knexfile.js",
-		"lint": "eslint '**/*.js'"
+		"lint": "eslint \"**/*.js\""
 	},
 	"author": "",
 	"license": "ISC",
