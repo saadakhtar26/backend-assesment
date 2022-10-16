@@ -5,10 +5,10 @@
 	"main": "app.js",
 	"scripts": {
 		"start": "node app.js",
-		"migrate": "knex migrate:latest",
-		"makemigrate": "knex --knexfile=./database/knexfile.js migrate:make",
-		"makeseed": "knex --knexfile=./database/knexfile.js seed:make",
-		"seed": "knex seed:run",
+		"migrate": "knex migrate:latest --knexfile ./database/knexfile.js",
+		"makemigrate": "knex --knexfile ./database/knexfile.js migrate:make",
+		"makeseed": "knex --knexfile ./database/knexfile.js seed:make",
+		"seed": "knex seed:run --knexfile ./database/knexfile.js",
 		"lint": "eslint '**/*.js'"
 	},
 	"author": "",
@@ -17,10 +17,10 @@
 		"express": "^4.17.1",
 		"faker": "^5.5.3",
 		"jsonwebtoken": "^8.5.1",
-		"kafkajs": "^1.15.0",
-		"knex": "^0.95.6",
-		"node-rdkafka": "^2.12.0",
-		"objection": "^2.2.15",
+		"kafkajs": "^2.2.1",
+		"knex": "^2.3.0",
+		"node-rdkafka": "^2.13.0",
+		"objection": "^3.0.1",
 		"pg": "^8.6.0"
 	},
 	"devDependencies": {
